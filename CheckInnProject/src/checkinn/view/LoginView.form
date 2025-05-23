@@ -223,9 +223,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sign Up"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MouseListener"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="LoginButton">
               <Properties>

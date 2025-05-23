@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package checkinn.view;
-
 /**
  *
  * @author risha
@@ -15,8 +14,8 @@ public class RegistrationView extends javax.swing.JFrame {
      */
     public RegistrationView() {
         initComponents();
+        makeRedirectLabelClickable();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -287,10 +286,8 @@ public class RegistrationView extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new RegistrationView().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new RegistrationView().setVisible(true);
         });
     }
 
@@ -319,4 +316,20 @@ public class RegistrationView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    private LoginView loginViewReference;
+
+public javax.swing.JLabel getRedirectToLogin(){
+    return RedirectToLogin;
+}
+
+public void setLoginViewReference(LoginView loginView){
+    this.loginViewReference=loginView;
+}
+
+private void makeRedirectLabelClickable(){
+    RedirectToLogin.setForeground(new java.awt.Color(0,51,153));
+    RedirectToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+}
+
 }

@@ -4,6 +4,7 @@
  */
 package checkinnproject;
 
+import checkinn.controller.regcontroller;
 import checkinn.view.LoginView;
 /**
  *
@@ -14,10 +15,19 @@ public class CheckInnProject {
     /**
      * @param args the command line arguments
      */
+    @SuppressWarnings("ResultOfObjectAllocationIgnored")
     public static void main(String[] args) {
         // TODO code application logic here
         LoginView loginView=new LoginView();
         loginView.setVisible(true);
+        
+        java.awt.EventQueue.invokeLater(() -> {
+        new regcontroller(loginView); // Initialize controller
+        loginView.setVisible(true);
+    });
+        
+        
+        
     }
     
 }

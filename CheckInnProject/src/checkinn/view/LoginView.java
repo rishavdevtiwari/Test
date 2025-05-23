@@ -15,7 +15,13 @@ public class LoginView extends javax.swing.JFrame {
      */
     public LoginView() {
         initComponents();
+        makeRedirectLabelClickable();
     }
+    
+    public void setLoginViewReference(LoginView loginView) {
+    //navigate back from registration to login
+}
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -78,11 +84,6 @@ public class LoginView extends javax.swing.JFrame {
 
         RedirectToReg.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         RedirectToReg.setText("Sign Up");
-        RedirectToReg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                MouseListener(evt);
-            }
-        });
 
         LoginButton.setBackground(new java.awt.Color(0, 102, 0));
         LoginButton.setText("Log In");
@@ -206,10 +207,6 @@ public class LoginView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_LoginButtonActionPerformed
 
-    private void MouseListener(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MouseListener
-        label.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-    }//GEN-LAST:event_MouseListener
-
     /**
      * @param args the command line arguments
      */
@@ -238,10 +235,8 @@ public class LoginView extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new LoginView().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new LoginView().setVisible(true);
         });
     }
 
@@ -260,4 +255,12 @@ public class LoginView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    public javax.swing.JLabel getRedirectToReg(){
+    return RedirectToReg;
+}
+    private void makeRedirectLabelClickable(){
+    RedirectToReg.setForeground(new java.awt.Color(0,51,153));
+    RedirectToReg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+}
 }

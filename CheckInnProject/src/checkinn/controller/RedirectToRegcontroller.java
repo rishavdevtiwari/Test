@@ -10,12 +10,12 @@ import checkinn.view.RegistrationView;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class regcontroller {
+public class RedirectToRegcontroller {
     
     private final LoginView loginView;
     private RegistrationView registrationView;
     
-    public regcontroller(LoginView loginView) {
+    public RedirectToRegcontroller(LoginView loginView) {
         this.loginView = loginView;
         initController();
     }

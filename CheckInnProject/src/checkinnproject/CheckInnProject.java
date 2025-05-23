@@ -4,7 +4,7 @@
  */
 package checkinnproject;
 
-import checkinn.controller.regcontroller;
+import checkinn.controller.RedirectToRegcontroller;
 import checkinn.view.LoginView;
 /**
  *
@@ -22,7 +22,7 @@ public class CheckInnProject {
         loginView.setVisible(true);
         
         java.awt.EventQueue.invokeLater(() -> {
-        new regcontroller(loginView); // Initialize controller
+        new RedirectToRegcontroller(loginView); // Initialize controller
         loginView.setVisible(true);
     });
         

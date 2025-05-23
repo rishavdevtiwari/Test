@@ -4,7 +4,7 @@
  */
 package checkinnproject;
 
-import checkinn.view.sdfgh;
+import checkinn.view.LoginView;
 /**
  *
  * @author ACER NITRO
@@ -16,7 +16,7 @@ public class CheckInnProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        sdfgh loginView=new sdfgh();
+        LoginView loginView=new LoginView();
         loginView.setVisible(true);
     }
     

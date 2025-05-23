@@ -26,21 +26,238 @@ public class RegistrationView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        TitleLabel = new javax.swing.JLabel();
+        SubtitleLabel = new javax.swing.JLabel();
+        RegFirstName = new javax.swing.JLabel();
+        RegEmail = new javax.swing.JLabel();
+        RegEmailInput = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        RegLastName = new javax.swing.JLabel();
+        RegFNameInput = new javax.swing.JTextField();
+        RegNewpass = new javax.swing.JLabel();
+        RegNewPassInput = new javax.swing.JPasswordField();
+        RegConfirmNewPassInput = new javax.swing.JPasswordField();
+        RegConfirmNewpass = new javax.swing.JLabel();
+        RegPh = new javax.swing.JLabel();
+        RegPhInput = new javax.swing.JTextField();
+        RegSecQ = new javax.swing.JLabel();
+        RegSecA = new javax.swing.JLabel();
+        RegSecQInput = new javax.swing.JTextField();
+        RegSecAnsInput = new javax.swing.JTextField();
+        RegisterButton = new javax.swing.JButton();
+        QLabel = new javax.swing.JLabel();
+        RedirectToLogin = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        TitleLabel.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        TitleLabel.setText("Create a New Account");
+
+        SubtitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        SubtitleLabel.setText("CheckInn Today");
+
+        RegFirstName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegFirstName.setText("First Name");
+
+        RegEmail.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegEmail.setText("Email Address | Username");
+
+        RegEmailInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegEmailInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegEmailInputActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegLastName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegLastName.setText("Last Name");
+
+        RegFNameInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegNewpass.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegNewpass.setText("New Password");
+
+        RegNewPassInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegConfirmNewPassInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegConfirmNewpass.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegConfirmNewpass.setText("Confirm New Password");
+
+        RegPh.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegPh.setText("Phone Number");
+
+        RegPhInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegSecQ.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegSecQ.setText("Security Question");
+
+        RegSecA.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegSecA.setText("Security Answer");
+
+        RegSecQInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+
+        RegSecAnsInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegSecAnsInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegSecAnsInputActionPerformed(evt);
+            }
+        });
+
+        RegisterButton.setBackground(new java.awt.Color(0, 153, 0));
+        RegisterButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegisterButton.setText("Register");
+
+        QLabel.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        QLabel.setText("Already have an account?");
+
+        RedirectToLogin.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        RedirectToLogin.setForeground(new java.awt.Color(0, 51, 153));
+        RedirectToLogin.setText("Log In");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(RegFirstName)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(RegEmail)
+                                .addGap(148, 148, 148))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(RegPh, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegPhInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegSecQ))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(RegConfirmNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegConfirmNewpass)
+                                    .addComponent(RegSecA)
+                                    .addComponent(RegNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegNewpass, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegEmailInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(RegisterButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(147, 147, 147))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(RegLastName)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RegSecQInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(RegFNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 577, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(222, 222, 222)
+                        .addComponent(TitleLabel))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(346, 346, 346)
+                        .addComponent(SubtitleLabel)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(QLabel)
+                .addGap(18, 18, 18)
+                .addComponent(RedirectToLogin)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(TitleLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SubtitleLabel)
+                .addGap(37, 37, 37)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegEmail)
+                    .addComponent(RegFirstName))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegFNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegEmailInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegLastName)
+                    .addComponent(RegNewpass))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegPh)
+                    .addComponent(RegConfirmNewpass))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegPhInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegConfirmNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(53, 53, 53)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegSecA)
+                    .addComponent(RegSecQ))
+                .addGap(41, 41, 41)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegSecQInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67)
+                .addComponent(RegisterButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(QLabel)
+                    .addComponent(RedirectToLogin))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel11.setText("CheckInn");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(74, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RegSecAnsInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegSecAnsInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegSecAnsInputActionPerformed
+
+    private void RegEmailInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegEmailInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegEmailInputActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +295,28 @@ public class RegistrationView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel QLabel;
+    private javax.swing.JLabel RedirectToLogin;
+    private javax.swing.JPasswordField RegConfirmNewPassInput;
+    private javax.swing.JLabel RegConfirmNewpass;
+    private javax.swing.JLabel RegEmail;
+    private javax.swing.JTextField RegEmailInput;
+    private javax.swing.JTextField RegFNameInput;
+    private javax.swing.JLabel RegFirstName;
+    private javax.swing.JLabel RegLastName;
+    private javax.swing.JPasswordField RegNewPassInput;
+    private javax.swing.JLabel RegNewpass;
+    private javax.swing.JLabel RegPh;
+    private javax.swing.JTextField RegPhInput;
+    private javax.swing.JLabel RegSecA;
+    private javax.swing.JTextField RegSecAnsInput;
+    private javax.swing.JLabel RegSecQ;
+    private javax.swing.JTextField RegSecQInput;
+    private javax.swing.JButton RegisterButton;
+    private javax.swing.JLabel SubtitleLabel;
+    private javax.swing.JLabel TitleLabel;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

@@ -324,21 +324,21 @@ public void setLoginViewReference(LoginView loginView){
     this.loginViewReference=loginView;
 }
 
-//private void makeRedirectLabelClickable() {
-//    RedirectToLogin.setForeground(new java.awt.Color(0, 51, 153));
-//    RedirectToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-//    
-//    RedirectToLogin.addMouseListener(new java.awt.event.MouseAdapter() {
-//        @Override
-//        public void mouseClicked(java.awt.event.MouseEvent evt) {
-//            // Open LoginView
-//            LoginView loginView = new LoginView();
-//            loginView.setVisible(true);
-//            
-//            // Close the current registration view
-//            dispose();
-//        }
-//    });
-//}
+private void makeRedirectLabelClickable() {
+    RedirectToLogin.setForeground(new java.awt.Color(0, 51, 153));
+    RedirectToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    
+    RedirectToLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+        @Override
+        public void mouseClicked(java.awt.event.MouseEvent evt) {
+            // Open LoginView
+            LoginView loginView = new LoginView();
+            loginView.setVisible(true);
+            
+            // Close the registration window
+            dispose();
+        }
+    });
+}
 
 }

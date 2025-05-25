@@ -31,22 +31,22 @@ public class RegistrationView extends javax.swing.JFrame {
         RegFirstName = new javax.swing.JLabel();
         RegEmail = new javax.swing.JLabel();
         RegEmailInput = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        RegLNameInput = new javax.swing.JTextField();
         RegLastName = new javax.swing.JLabel();
         RegFNameInput = new javax.swing.JTextField();
         RegNewpass = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        RegNewPassInput = new javax.swing.JPasswordField();
+        RegConfirmNewPassInput = new javax.swing.JPasswordField();
         RegConfirmNewpass = new javax.swing.JLabel();
         RegPh = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        RegPhInput = new javax.swing.JTextField();
         RegSecQ = new javax.swing.JLabel();
         RegSecA = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        RegSecQInput = new javax.swing.JTextField();
+        RegSecAnsInput = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        AlrHavAccQ = new javax.swing.JLabel();
+        RedirectToLogin = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,7 +70,7 @@ public class RegistrationView extends javax.swing.JFrame {
             }
         });
 
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegLNameInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         RegLastName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegLastName.setText("Last Name");
@@ -80,9 +80,9 @@ public class RegistrationView extends javax.swing.JFrame {
         RegNewpass.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegNewpass.setText("New Password");
 
-        jPasswordField1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegNewPassInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jPasswordField2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegConfirmNewPassInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         RegConfirmNewpass.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegConfirmNewpass.setText("Confirm New Password");
@@ -90,7 +90,7 @@ public class RegistrationView extends javax.swing.JFrame {
         RegPh.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegPh.setText("Phone Number");
 
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegPhInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         RegSecQ.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegSecQ.setText("Security Question");
@@ -98,12 +98,12 @@ public class RegistrationView extends javax.swing.JFrame {
         RegSecA.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         RegSecA.setText("Security Answer");
 
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegSecQInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        RegSecAnsInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegSecAnsInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                RegSecAnsInputActionPerformed(evt);
             }
         });
 
@@ -111,12 +111,12 @@ public class RegistrationView extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("Register");
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel12.setText("Already have an account?");
+        AlrHavAccQ.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        AlrHavAccQ.setText("Already have an account?");
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel13.setText("Log In");
+        RedirectToLogin.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        RedirectToLogin.setForeground(new java.awt.Color(0, 51, 153));
+        RedirectToLogin.setText("Log In");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -135,27 +135,26 @@ public class RegistrationView extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(RegPh, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(RegSecQ))
+                                    .addComponent(RegPhInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegLNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegSecQ)
+                                    .addComponent(RegSecQInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegConfirmNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegConfirmNewpass)
                                     .addComponent(RegSecA)
-                                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(RegNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegNewpass, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegEmailInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(147, 147, 147))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(RegLastName)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(RegFNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(RegFNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 577, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,10 +166,10 @@ public class RegistrationView extends javax.swing.JFrame {
                         .addComponent(SubtitleLabel)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(250, 250, 250)
-                .addComponent(jLabel12)
+                .addGap(252, 252, 252)
+                .addComponent(AlrHavAccQ)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel13)
+                .addComponent(RedirectToLogin)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -194,31 +193,31 @@ public class RegistrationView extends javax.swing.JFrame {
                     .addComponent(RegNewpass))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
+                    .addComponent(RegNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegLNameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RegPh)
-                    .addComponent(RegConfirmNewpass))
-                .addGap(45, 45, 45)
+                    .addComponent(RegConfirmNewpass)
+                    .addComponent(RegPh))
+                .addGap(48, 48, 48)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
+                    .addComponent(RegConfirmNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegPhInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RegSecA)
                     .addComponent(RegSecQ))
-                .addGap(41, 41, 41)
+                .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67)
+                    .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegSecQInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
                 .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(RedirectToLogin)
+                    .addComponent(AlrHavAccQ))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
@@ -242,15 +241,15 @@ public class RegistrationView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void RegSecAnsInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegSecAnsInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_RegSecAnsInputActionPerformed
 
     private void RegEmailInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegEmailInputActionPerformed
         // TODO add your handling code here:
@@ -290,44 +289,56 @@ public class RegistrationView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel AlrHavAccQ;
+    private javax.swing.JLabel RedirectToLogin;
+    private javax.swing.JPasswordField RegConfirmNewPassInput;
     private javax.swing.JLabel RegConfirmNewpass;
     private javax.swing.JLabel RegEmail;
     private javax.swing.JTextField RegEmailInput;
     private javax.swing.JTextField RegFNameInput;
     private javax.swing.JLabel RegFirstName;
+    private javax.swing.JTextField RegLNameInput;
     private javax.swing.JLabel RegLastName;
+    private javax.swing.JPasswordField RegNewPassInput;
     private javax.swing.JLabel RegNewpass;
     private javax.swing.JLabel RegPh;
+    private javax.swing.JTextField RegPhInput;
     private javax.swing.JLabel RegSecA;
+    private javax.swing.JTextField RegSecAnsInput;
     private javax.swing.JLabel RegSecQ;
+    private javax.swing.JTextField RegSecQInput;
     private javax.swing.JLabel SubtitleLabel;
     private javax.swing.JLabel TitleLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 
     private LoginView loginViewReference;
 
 public javax.swing.JLabel getRedirectToLogin(){
-    return jLabel13;
+    return RedirectToLogin;
 }
 
 public void setLoginViewReference(LoginView loginView){
     this.loginViewReference=loginView;
 }
 
-private void makeRedirectLabelClickable(){
-    jLabel13.setForeground(new java.awt.Color(0,51,153));
-    jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-}
+//private void makeRedirectLabelClickable() {
+//    RedirectToLogin.setForeground(new java.awt.Color(0, 51, 153));
+//    RedirectToLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+//    
+//    RedirectToLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+//        @Override
+//        public void mouseClicked(java.awt.event.MouseEvent evt) {
+//            // Open LoginView
+//            LoginView loginView = new LoginView();
+//            loginView.setVisible(true);
+//            
+//            // Close the current registration view
+//            dispose();
+//        }
+//    });
+//}
 
 }

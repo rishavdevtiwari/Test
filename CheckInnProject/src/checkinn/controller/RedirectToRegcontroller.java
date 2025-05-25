@@ -40,6 +40,7 @@ public class RedirectToRegcontroller {
             // You might want to pass the loginView reference to registrationView
             // so you can return to it later
             registrationView.setLoginViewReference(loginView);
+            registrationView.setLocationRelativeTo(null);
         }
         registrationView.setVisible(true);
     }

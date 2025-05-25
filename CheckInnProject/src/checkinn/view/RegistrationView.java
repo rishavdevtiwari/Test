@@ -374,7 +374,7 @@ private void makeRedirectLabelClickable() {
             loginView.setLocationRelativeTo(null);
             
             // Close the registration window
-            dispose();
+            setVisible(false);
         }
     });
 }

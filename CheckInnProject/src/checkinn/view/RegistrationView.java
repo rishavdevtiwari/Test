@@ -44,7 +44,7 @@ public class RegistrationView extends javax.swing.JFrame {
         RegSecA = new javax.swing.JLabel();
         RegSecQInput = new javax.swing.JTextField();
         RegSecAnsInput = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        RegButton = new javax.swing.JButton();
         AlrHavAccQ = new javax.swing.JLabel();
         RedirectToLogin = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -107,9 +107,14 @@ public class RegistrationView extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton1.setText("Register");
+        RegButton.setBackground(new java.awt.Color(0, 153, 0));
+        RegButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        RegButton.setText("Register");
+        RegButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegButtonActionPerformed(evt);
+            }
+        });
 
         AlrHavAccQ.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         AlrHavAccQ.setText("Already have an account?");
@@ -148,7 +153,7 @@ public class RegistrationView extends javax.swing.JFrame {
                                     .addComponent(RegNewpass, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegEmailInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(RegButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(147, 147, 147))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(RegLastName)
@@ -212,7 +217,7 @@ public class RegistrationView extends javax.swing.JFrame {
                     .addComponent(RegSecAnsInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RegSecQInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
-                .addComponent(jButton1)
+                .addComponent(RegButton)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RedirectToLogin)
@@ -255,6 +260,10 @@ public class RegistrationView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_RegEmailInputActionPerformed
 
+    private void RegButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -291,6 +300,7 @@ public class RegistrationView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AlrHavAccQ;
     private javax.swing.JLabel RedirectToLogin;
+    private javax.swing.JButton RegButton;
     private javax.swing.JPasswordField RegConfirmNewPassInput;
     private javax.swing.JLabel RegConfirmNewpass;
     private javax.swing.JLabel RegEmail;
@@ -309,7 +319,6 @@ public class RegistrationView extends javax.swing.JFrame {
     private javax.swing.JTextField RegSecQInput;
     private javax.swing.JLabel SubtitleLabel;
     private javax.swing.JLabel TitleLabel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

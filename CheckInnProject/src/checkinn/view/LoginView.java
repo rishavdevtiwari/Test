@@ -168,10 +168,10 @@ public class LoginView extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
 
-        BoyOnTableImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\risha\\Downloads\\image-removebg-preview2.png")); // NOI18N
+        BoyOnTableImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boyontable.png"))); // NOI18N
         BoyOnTableImg.setText("jLabel2");
 
-        LogoImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\risha\\Downloads\\image-removebg-previewnew.png")); // NOI18N
+        LogoImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/checkinnlogo.png"))); // NOI18N
         LogoImg.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

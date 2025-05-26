@@ -153,7 +153,6 @@ public class RegistrationView extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(RegLNameInput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(RegPhInput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(RegConfirmNewPassInput, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(RegConfirmNewpass)
@@ -242,9 +241,9 @@ public class RegistrationView extends javax.swing.JFrame {
         );
 
         LogoImg.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        LogoImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\risha\\Downloads\\image-removebg-previewnew.png")); // NOI18N
+        LogoImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/checkinnlogo.png"))); // NOI18N
 
-        BoyOnTableImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\risha\\OneDrive\\Pictures\\Camera Roll\\boyontable.png")); // NOI18N
+        BoyOnTableImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boyontable.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -374,7 +373,7 @@ private void makeRedirectLabelClickable() {
             loginView.setLocationRelativeTo(null);
             
             // Close the registration window
-            setVisible(false);
+            dispose();
         }
     });
 }

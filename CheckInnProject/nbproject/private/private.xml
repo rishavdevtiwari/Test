@@ -5,7 +5,9 @@
         <group>
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/LoginView.java</file>
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/RegistrationView.java</file>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToRegcontroller.java</file>
+            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToRegController.java</file>
+            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToLoginController.java</file>
+            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinnproject/CheckInnProject.java</file>
         </group>
     </open-files>
 </project-private>

@@ -3,23 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/LoginView.java</file>
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/RegistrationView.java</file>
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToRegController.java</file>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToLoginController.java</file>
             <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinnproject/CheckInnProject.java</file>
-=======
-            <file>file:/C:/Users/LPR%20HUB/Documents/NetBeansProjects/CheckInnProject/src/checkinn/view/FPUserValidateView.java</file>
-            <file>file:/C:/Users/LPR%20HUB/Documents/NetBeansProjects/CheckInnProject/src/checkinn/view/LoginView.java</file>
-            <file>file:/C:/Users/LPR%20HUB/Documents/NetBeansProjects/CheckInnProject/src/checkinn/view/RegistrationView.java</file>
->>>>>>> d526236fcf1c01a0ba01769a775505cc67283c17
-=======
-            <file>file:/D:/Sem%202/Computer%20Science%20Activity%20project%202/NetBeansProjects/CheckInnProject/src/checkinn/view/LoginView.java</file>
-            <file>file:/D:/Sem%202/Computer%20Science%20Activity%20project%202/NetBeansProjects/CheckInnProject/src/checkinn/view/RegistrationView.java</file>
-            <file>file:/D:/Sem%202/Computer%20Science%20Activity%20project%202/NetBeansProjects/CheckInnProject/src/checkinn/view/RoomDetailsView.java</file>
->>>>>>> 7e5567b6b593ec8fc0e3293ac33aa89504e11939
         </group>
     </open-files>
 </project-private>

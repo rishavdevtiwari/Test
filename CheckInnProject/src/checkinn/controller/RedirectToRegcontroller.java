@@ -31,7 +31,7 @@ public class RedirectToRegController {
         registrationView.setLocationRelativeTo(null);
         
         // Set up the back navigation
-        new RedirectToLoginController(registrationView, loginView);
+        RedirectToLoginController redirectToLoginController = new RedirectToLoginController(registrationView, loginView);
         
         registrationView.setVisible(true);
     }

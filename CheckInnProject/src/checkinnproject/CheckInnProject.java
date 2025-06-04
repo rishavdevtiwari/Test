@@ -4,6 +4,7 @@
  */
 package checkinnproject;
 
+
 import checkinn.controller.RedirectToRegController;
 import checkinn.view.LoginView;
 /**

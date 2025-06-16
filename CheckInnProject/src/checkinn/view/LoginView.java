@@ -4,6 +4,10 @@
  */
 package checkinn.view;
 
+//import checkinn.controller.LoginController;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseListener;
+import javax.swing.*;
 /**
  *
  * @author risha
@@ -16,8 +20,11 @@ public class LoginView extends javax.swing.JFrame {
     public LoginView() {
         initComponents();
         makeRedirectLabelClickable();
+        makeForgotPasswordLabelClickable();
+        setTitle("Login Form | CheckInn");
         setLocationRelativeTo(null);
     }
+    
     
 
     /**
@@ -228,11 +235,6 @@ public class LoginView extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -275,11 +277,65 @@ public class LoginView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
+    public JButton getLoginButton() {
+        return LoginButton;
+    }
+
+    public JLabel getForgotPasswordLabel() {
+        return ForgotPassword;
+    }
+
+    public JLabel getRedirectToRegLabel() {
+        return RedirectToReg;
+    }
+
+    public String getEmail() {
+        return LoginUsernameInput.getText().trim();
+    }
+
+    public String getPassword() {
+        return new String(LoginPasswordInput.getPassword()).trim();
+    }
+
+    public String promptForEmail() {
+        return JOptionPane.showInputDialog(this, "Enter your registered email:", "Forgot Password", JOptionPane.QUESTION_MESSAGE);
+    }
+
+    public String promptForOTP() {
+        return JOptionPane.showInputDialog(this, "Enter the OTP sent to your email:", "OTP Verification", JOptionPane.QUESTION_MESSAGE);
+    }
+
+    public String promptForNewPassword() {
+        return JOptionPane.showInputDialog(this, "Enter your new password:", "Reset Password", JOptionPane.QUESTION_MESSAGE);
+    }
+
+public void addLoginListener(ActionListener listener) {
+    LoginButton.addActionListener(listener);
+}
+public void showError(String message) { JOptionPane.showMessageDialog(this, message, "Error", JOptionPane.ERROR_MESSAGE); }
+public void showMessage(String message) { JOptionPane.showMessageDialog(this, message, "Info", JOptionPane.INFORMATION_MESSAGE); }
+
+    public void addForgotPasswordListener(MouseListener listener) {
+        ForgotPassword.addMouseListener(listener);
+    }
+
+    public void addRegisterNavigationListener(MouseListener listener) {
+        RedirectToReg.addMouseListener(listener);
+    }
+
     public javax.swing.JLabel getRedirectToReg(){
     return RedirectToReg;
 }
     private void makeRedirectLabelClickable(){
     RedirectToReg.setForeground(new java.awt.Color(0,51,153));
     RedirectToReg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+}
+    
+public javax.swing.JLabel getForgotPassword(){
+    return ForgotPassword;
+}
+private void makeForgotPasswordLabelClickable(){
+ForgotPassword.setForeground(new java.awt.Color(0,51,153));
+ForgotPassword.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 }
 }

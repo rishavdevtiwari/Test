@@ -1,0 +1,1 @@
+checkinn.controller.AdminDashboardController

@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/LoginView.java</file>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/view/RegistrationView.java</file>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinn/controller/RedirectToRegController.java</file>
-            <file>file:/S:/NetBeansProjects/CheckInnProject/src/checkinnproject/CheckInnProject.java</file>
+            <file>file:/D:/CheckInnProject/src/checkinn/view/AdminClientView.java</file>
+            <file>file:/D:/CheckInnProject/src/checkinn/view/UserProfileView.java</file>
+            <file>file:/D:/CheckInnProject/src/checkinn/view/DashboardView.java</file>
+            <file>file:/D:/CheckInnProject/src/checkinn/controller/DashboardController.java</file>
+            <file>file:/D:/CheckInnProject/src/checkinn/controller/UserProfileController.java</file>
         </group>
     </open-files>
 </project-private>
